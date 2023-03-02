@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens DInâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente o tamanho o seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="fotos/fotop.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="fotos/fotom.jpg" type="image/jpg">
+        <img src="fotos/fotog.jpg" alt="imagens flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a Reproduzir Áudios em HTML</p>
+    <audio src="midia/pregiçosos.mp3" controls ></audio>
+
+    <audio preload="metadata" >
+        <!--
+        Alguns parâmetro q podem ser usados: controls autoplay loop
+        -->
+        <source src="midia/pregiçosos.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

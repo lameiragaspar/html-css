@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: aqua;
+    text-align: center;
+}
+hr{
+    color: rgb(0, 0, 0);
+    width: 400px;
+    height: 1px;
+}
