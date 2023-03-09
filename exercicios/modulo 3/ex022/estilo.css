@@ -1,16 +1,21 @@
 body{
     height: 100vh;
-    background-color: black;
+   /* background-color: black;
     background-image: url(imagens/wallpaper002.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover ;
+    background-attachment: fixed; */
+
+    background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;/*shorthand-background*/
+
+    background-size: cover;
 }
 
 main{
     background-color: white;   
     padding: 10px;
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     text-align: justify;
     border: 2px solid rgb(56, 98, 152);
