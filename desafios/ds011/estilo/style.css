@@ -13,6 +13,8 @@
     --font-padão:;
     --cor0:#ffffff;
     --cor1:#000000;
+    --cor3:#00ffff;
+    --cor4:#0000005e;
 
 
 }
@@ -21,7 +23,7 @@ header{
     font-family: var(--font-titolo);
     background-color:var(--cor1);
     padding: 20px;
-    height: 144px;
+    height: auto;
     text-align: center;
 }
 p.titulo{
@@ -36,22 +38,33 @@ p.autor{
     font-weight: normal;
 }
 a{
-    font-family: var(--font-autor);
     font-weight: bold;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--cor0);
     font-weight: 100;  
 }
 a:hover{
     text-decoration: underline;
 }
-main>p{
-    max-width: 200px;
+
+main > article{
+    background-color: var(--cor3);
+    
 }
+p.texto{
+    padding: 20px;
+    width: 170px;
+    
+}
+article>p{
+    background-color: var(--cor4);
+}
+
 footer{
+    font-family: var(--font-autor);
     background-color: var(--cor1);
     color: var(--cor0);
     text-align: center;
-    padding: 5px;
-    font-family: var(--font-autor);
+    padding: 2px 0px;
+    margin-bottom: 0px;
 }
