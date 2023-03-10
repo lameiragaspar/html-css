@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --font-titolo:'Passion One', cursive;
+    --font-autor: verdana ;
+    --font-padão:;
+    --cor0:#ffffff;
+    --cor1:#000000;
+
+
+}
+header{
+    color:var(--cor0);
+    font-family: var(--font-titolo);
+    background-color:var(--cor1);
+    padding: 20px;
+    height: 144px;
+    text-align: center;
+}
+p.titulo{
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 3em;
+}
+p.autor{
+    font-size: 1em;
+    padding-top: 7px;
+    font-family: var(--font-autor);
+    font-weight: normal;
+}
+a{
+    font-family: var(--font-autor);
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100;  
+}
+a:hover{
+    text-decoration: underline;
+}
+main>p{
+    max-width: 200px;
+}
+footer{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    padding: 5px;
+    font-family: var(--font-autor);
+}
