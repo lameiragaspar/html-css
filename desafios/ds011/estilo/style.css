@@ -18,67 +18,57 @@
     --cor1:#000000;
     --cor3:#000000e3;
     --cor4:#00000059;
-
-
 }
-
+body{
+    min-height: 100vh;
+}
 header{
     color:var(--cor0);
-    font-family: var(--font-titolo);
     background-color:var(--cor1);
-    padding: 20px;
-    height: auto;
     text-align: center;
 }
 
-p.titulo{
-    font-weight: bold;
-    padding-top: 30px;
-    font-size: 3em;
+header > h1{
+    font-family: var(--font-titolo);
+    font-variant: small-caps;
+    padding-top: 50px;
 }
-p.autor{
-    font-size: 1em;
-    padding-top: 7px;
+
+header > p{
     font-family: var(--font-autor);
-    font-weight: normal;
+    padding-bottom: 50px;
 }
 
 a{
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
-    color: var(--cor0);
-    font-weight: 100;  
+    color: var(--cor0);  
 }
 
 a:hover{
     text-decoration: underline;
 }
 
-main{
-    padding: 10px;
-}
-p.texto{
+main > section{
+    padding-left:40px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
     font-family: var(--font-padão);
-    padding: 1px 4px;
-}    
-
-main > article{
-    background-color: var(--cor3);
-    margin: 0px -9px 0px -10px;
-    height: 300px;
-    position: relative;
-    
-
 
 }
-article > p{
-    color: var(--cor0);
-    background-color: var(--cor4);
 
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translate(0px, -50%);
+section>p{
+    padding-bottom: 30px;
+}
+
+section.img > p{
+    background-color: var(--cor4);
+    width:190px;
+    padding: 0px 2px 0px 4px;
+}
+section.img{
+    background-color: var(--cor3);
 }
 
 footer{
