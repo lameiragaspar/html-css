@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,14 +13,15 @@
 :root{
     --font-titolo:'Passion One', cursive;
     --font-autor: verdana ;
-    --font-padão:;
+    --font-padão:'Sriracha';
     --cor0:#ffffff;
     --cor1:#000000;
-    --cor3:#00ffff;
-    --cor4:#0000005e;
+    --cor3:#000000e3;
+    --cor4:#00000059;
 
 
 }
+
 header{
     color:var(--cor0);
     font-family: var(--font-titolo);
@@ -26,6 +30,7 @@ header{
     height: auto;
     text-align: center;
 }
+
 p.titulo{
     font-weight: bold;
     padding-top: 30px;
@@ -37,27 +42,44 @@ p.autor{
     font-family: var(--font-autor);
     font-weight: normal;
 }
+
 a{
     font-weight: bold;
     text-decoration: none;
     color: var(--cor0);
     font-weight: 100;  
 }
+
 a:hover{
     text-decoration: underline;
 }
 
-main > article{
-    background-color: var(--cor3);
-    
+main{
+    padding: 10px;
 }
 p.texto{
-    padding: 20px;
+    font-family: var(--font-padão);
+    padding: 1px 4px;
     width: 170px;
+}    
+
+main > article{
+    background-color: var(--cor3);
+    margin: 0px -9px 0px -10px;
+    height: 300px;
+    position: relative;
     
+
+
 }
-article>p{
+article > p{
+    color: var(--cor0);
     background-color: var(--cor4);
+
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
 
 footer{
