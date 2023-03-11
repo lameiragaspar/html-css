@@ -17,7 +17,7 @@
     --cor0:#ffffff;
     --cor1:#000000;
     --cor3:#000000e3;
-    --cor4:#00000059;
+    --cor4:#0000008b;
 }
 body{
     min-height: 100vh;
@@ -63,12 +63,28 @@ section>p{
 }
 
 section.img > p{
+    color:var(--cor0);
     background-color: var(--cor4);
     width:190px;
     padding: 0px 2px 0px 4px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.821);
 }
 section.img{
     background-color: var(--cor3);
+    background-size: cover;
+    box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.537);
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image:url(../imagens/background001.jpg);
+    background-position: right center;
+    position: abo;
+}
+
+section#img02{
+    background-image:url(../imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer{
