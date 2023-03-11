@@ -29,6 +29,7 @@ header{
 }
 
 header > h1{
+    font-size: 5em;
     font-family: var(--font-titolo);
     font-variant: small-caps;
     padding-top: 50px;
