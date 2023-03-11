@@ -60,7 +60,6 @@ main{
 p.texto{
     font-family: var(--font-padão);
     padding: 1px 4px;
-    width: 170px;
 }    
 
 main > article{
