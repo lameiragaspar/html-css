@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        caption
+
+        thead, tfoot{
+            background-color: rgb(37, 37, 37);
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de Tabelas Grandes
+    </h1>
+    <!--
+        Anatoma pra tabelas grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Província</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <caption>
+
+        </caption>
+
+        <tbody>
+            <tr>
+                <td>Luanda</td>
+                <td class="num">6 945 386</td>
+            </tr>
+            <tr>
+                <td>Benguela</td>
+                <td class="num">2 231 385</td>
+            </tr>
+            <tr>
+                <td>Bie</td>
+                <td class="num">1 455 255</td>
+            </tr>
+            <tr>
+                <td>Bengo</td>
+                <td class="num">356 641</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td class="num">716 076</td>
+            </tr>
+            <tr>
+                <td>Cuando Cubango</td>
+                <td class="num">534 002</td>
+            </tr>
+            <tr>
+                <td>Cuanza Norte</td>
+                <td class="num">443 386</td>
+            </tr>
+            <tr>
+                <td>Cuanza Sul</td>
+                <td class="num">1 881 873</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td class="num">990 087</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td class="num">2 019 555</td>
+            </tr>
+            <tr>
+                <td>Huila</td>
+                <td class="num">2 497 422</td>
+            </tr>
+            <tr>
+                <td>Lunda Norte</td>
+                <td class="num">862 566	</td>
+            </tr>
+            <tr>
+                <td>Lunda Sul</td>
+                <td class="num">537 587</td>
+            </tr>
+            <tr>
+                <td>Malanje</td>
+                <td class="num">986 363</td>
+            </tr>
+            <tr>
+                <td>Moxico</td>
+                <td class="num">758 568</td>
+             </tr>
+            <tr>
+                <td>Namibe</td>
+                <td class="num">495 326</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td class="num">1 483 118</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td class="num">594 428</td>
+            </tr> 
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total da Habitantes</th>
+                <td class="num"><strong>33.097.671</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
