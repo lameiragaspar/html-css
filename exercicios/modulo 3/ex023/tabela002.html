@@ -12,18 +12,28 @@
         table{
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
         td, th{
-            border: 1px solid black;
+            border: 1px solid ;
             padding: 8px;
         }
 
-        caption
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color:black ;
+        }
 
         thead, tfoot{
-            background-color: rgb(37, 37, 37);
+            background-color: rgb(0, 0, 0);
             color: white;
         }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(88, 101, 101);
+        }
+
         td.num{
             text-align: right;
         }
