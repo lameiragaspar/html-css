@@ -47,7 +47,7 @@ section.sociais > nav > a > img{
 }
 
 img:hover{
-    transform: translate(15px);
+    transform: translate(20px);
     border: 1px solid #ffffff87;
     transition: 0.5s;
 }
