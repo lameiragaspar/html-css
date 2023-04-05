@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles Adicionais</title>
+</head>
+<body>
+    <h1>Controles Adicionais</h1>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend></legend>
+        <p>
+            <label for="i_cor">Cor</label>
+            <input type="color" name="cor" id="i_cor">
+        </p> 
+        <p>
+            <label for="i_nivel">Satisfação</label>
+            <input type="range" name="nivel" id="i_nivel">
+        </p>
+        <p>
+            <label for="i_photo">Foto de Perfil</label>
+            <input type="file" name="photo" id="i_photo">
+        </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
