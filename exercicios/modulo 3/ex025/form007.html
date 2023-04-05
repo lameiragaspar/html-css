@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários sem Input</h1>
+    <form action="" method="POST">
+        <fieldset>
+            <p>
+                <label for="i_estado">Estado/Província:</label>
+                <select name="estado" id="i_estado">
+
+                    <option value="" selected>Selecione sua Província</option>
+                    <optgroup label="Angola inteira">
+                        <option value="LD">Luanda</option>
+                        <option value="BG">Bengo</option>
+                        <option value="KB">Kabinda</option>
+                        <option value="ML">Malange</option>
+                        <option value="UL">Úila</option>
+                    </optgroup>
+                </select>
+                
+            </p>
+            <p>
+                <label for="i_profiss">Profissão:</label>
+                <input type="text" name="profiss" id="i_profiss" list="list_Profiss">
+                <datalist id="list_Profiss">
+                    <option value="PROF">Professor</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="MÉDICO">Médico</option>
+                    <option value="DOC">Doctor</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="i_msg">Mensagem</label> <br>
+                <textarea name="msg" id="i_msg" cols="30" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
