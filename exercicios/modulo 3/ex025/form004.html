@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Novos Controles</h1>
+    <form action="cadastro.php" method="GET">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="i_mas"> <label for="i_mas">Masculino</label> <br>
+                <input type="radio" name="sexo" id="i_fem"><label for="i_fem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Espote Favorito</legend>
+            <p>
+                <input type="checkbox" name="futebol" id="i_futebol"> <label for="i_futebol">Futebol</label> <br>
+
+                <input type="checkbox" name="basquete" id="i_basquete" > <label for="i_basquete">Basquete</label> <br>
+
+                <input type="checkbox" name="tenis" id="i_tenis"><label for="i_tenis">Tênis</label> <br>
+
+                <input type="checkbox" name="volei" id="i_volei"> <label for="i_volei">Volei bol</label> <br>
+
+                <input type="checkbox" name="baseball" id="i_baseball"> <label for="i_baseball">Baseball</label> <br>
+            </p>
+        </fieldset>
+        <P>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </P>
+    </form>
+</body>
+</html>
