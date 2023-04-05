@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="i:nome">Nome:</label>
+            <input type="text" name="nome" id="i_nome" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="i_mail">Digite seu Email</label>
+                <input type="email" name="email" id="i_mail" required autocomplete="email" >
+            </p>
+            <p>
+                <label for="i_phone">Telefone</label>
+                <input type="tel" name="phone" id="i_phone" required autocomplete="tel"
+                pattern="^\d{9}$">
+
+                <!--Preciso estudar mais sobre RegEx (pattern="^\d{9}$")-->
+            </p>
+            
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+</body>
+</html>
