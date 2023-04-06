@@ -18,13 +18,25 @@
     <h1>Exemplo de Formulário</h1>
     <form action="Cadastro.php">
         <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome">
+            <label for="i_ano">Em que ano você nasceu:</label>
+            <input type="number" name="ano" id="i_ano" min="1900" max="2023" required oninput="calc_idade()">
         </p> 
         <p>
-            <label for="isobrenome">SObrenome</label> <input type="text" name="sobrenome" id="isobrenome">
+            <label for="i_dade">A sua idade actual é:</label>
+            <output id="i_dade">
+                0
+            </output>
         </p>
-        <p><input type="submit" value="Enviar"></p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="i_dade.innerHTML = 0">
+        </p>
     </form>
+    <script>
+        function calc_idade(){
+            var actual = new Date().getFullYear()
+            i_dade.innerHTML = Number(actual) - Number(i_ano.value)
+        }
+    </script>
 </body>
 </html>
