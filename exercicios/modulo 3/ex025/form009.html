@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+    </style>
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="Cadastro.php">
+        <p>
+            <label for="i_num">Número:</label>
+            <input type="range" name="num" id="i_num" min="0" max="10" value="0" oninput="i_saida.innerHTML = Number(i_num.value)">
+            <output name="saida" id="i_saida" >
+                5
+            </output>
+            
+        </p> 
+       
+            
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar " onclick="i_saida.innerHTML= 0 ">
+        </p>
+
+    </form>
+</body>
+</html>
