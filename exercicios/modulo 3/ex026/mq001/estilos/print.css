@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+menu{
+    display: none;
+}
+
+article::after{
+   content: 'Artigo impresso do site www.plg.com'; 
+}
+main{
+    width: 100%;
+    height:100%;
+}
+main > article > p{
+    text-align: justify;
+}
