@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding: 0;
+    border-radius: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 95vh;
+    background: url(../imagens/back-phone.jpg) top center no-repeat fixed;
+    background-size: cover;
+}
+
+main{
+    background: #ffffffa0;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+main > img{
+    display: block;
+    margin: auto; 
+    display: none;
+}
+img#phone{display: block;}
