@@ -16,10 +16,13 @@
 }
 
 /*computadores*/
-@media screen and (min-width:768px) and (max-width: 1200px) {
+@media screen and (min-width:992px) and (max-width: 1200px) {
     body{
-        
+        background-image:url(../imagens/back-pc.jpg);
     }
+    img#tablet, img#phone{display:none;}
+    img#pc{display:block;}
+    
 }
 
 /*Tv's*/
