@@ -4,7 +4,15 @@
 
 /*impreção*/
 @media print{
-
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#impreção{
+        display: block;
+    }
 }
 /*tablets*/
 @media screen and (min-width:768px) and (max-width: 992px) {
@@ -26,6 +34,10 @@
 }
 
 /*Tv's*/
-@media screen and () {
-    
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tablet, img#phone, img#pc{display: none;}
+    img#tv{display: block;}
 }
