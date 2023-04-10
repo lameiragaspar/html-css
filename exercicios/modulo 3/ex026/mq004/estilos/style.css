@@ -40,4 +40,8 @@
     }
     img#tablet, img#phone, img#pc{display: none;}
     img#tv{display: block;}
+    main{
+        width: 50vw;
+        margin-top:90px;
+    }
 }
