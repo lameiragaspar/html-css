@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/medias.css">
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
         <h1>Menu Responsivo</h1>
         <span id="menu" class="material-icons" onclick="clic_Menu()">menu </span>
@@ -40,6 +41,15 @@
         </article>
     </main>
     <script>
+ 
+        function tamanho(){
+            if(window.innerWidth >= 768){
+                mostrar.style.display = 'block'
+            }
+            else{
+                mostrar.style.display = 'none'
+            }
+        }
         function clic_Menu(){
             if(mostrar.style.display == 'block'){
                 mostrar.style.display = 'none'

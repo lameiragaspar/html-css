@@ -1,0 +1,38 @@
+@charset " UTF-8";
+
+/*Outras Medias*/
+
+@media screen and (min-width:768px) {
+    header{
+        box-shadow: 0px 1px 5px ;
+    }
+    span#menu{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    header > menu > ul > li{
+        display: inline-block;
+    }
+
+    header > menu > ul > li >a{
+        border-radius: 5px;
+        margin: 0px 5px 3px ;
+        border-top: 1px solid #7da5ac;
+        border-bottom:1px solid black ;
+        
+    }
+
+    header > menu > ul > li >a:hover{
+        background-color: #757575b0;
+        transition: 0.5s;
+    }
+    main{
+        width: 768px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
