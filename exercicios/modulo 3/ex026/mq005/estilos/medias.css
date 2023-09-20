@@ -9,23 +9,18 @@
     span#menu{
         display: none;
     }
-
     menu{
         display: block;
     }
-
     header > menu > ul > li{
         display: inline-block;
     }
-
     header > menu > ul > li >a{
         border-radius: 5px;
         margin: 0px 5px 3px ;
         border-top: 1px solid #7da5ac;
-        border-bottom:1px solid black ;
-        
+        border-bottom:1px solid black ;   
     }
-
     header > menu > ul > li >a:hover{
         background-color: #757575b0;
         transition: 0.5s;
